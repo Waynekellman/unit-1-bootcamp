@@ -79,8 +79,24 @@ public class DataStructures {
 //    }
 
     int countClumps = countClumps(integers);
-    System.out.println(countClumps);
+//    System.out.println(countClumps);
 
+
+    sortingSentences("My name is Wayne");
+  }
+
+  private static void sortingSentences(String s) {
+    ArrayList<String> sorted = new ArrayList<>();
+    for (String string : s.split(" ")) {
+      sorted.add(string.trim());
+    }
+    for (int i = 97; i < 122; i++) {
+      for (int j = 0; j < sorted.size(); j++) {
+        if(sorted.get(j).toLowerCase().charAt(0) == i){
+          System.out.println(sorted.get(j));
+        }
+      }
+    }
   }
 
   private static int countClumps(ArrayList<Integer> integers) {
