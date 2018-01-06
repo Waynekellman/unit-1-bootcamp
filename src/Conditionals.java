@@ -33,7 +33,7 @@ public class Conditionals {
     System.out.println(b);
   }
 
-  private static boolean evenlySpaced(int i, int i1, int i2) {
+  public static boolean evenlySpaced(int i, int i1, int i2) {
     int dif1 = i - i1;
     int dif2 = i1 - i2;
 
@@ -43,7 +43,7 @@ public class Conditionals {
     return false;
   }
 
-  private static int blackJack(int i, int i1) {
+  public static int blackJack(int i, int i1) {
     //idk what to do if they are the same number so i'm just returning 0.
     int dif1 = 21 - i;
     int dif2 = 21 - i1;
@@ -62,7 +62,7 @@ public class Conditionals {
     return 0;
   }
 
-  private static int greenLottery(int i, int i1, int i2) {
+  public static int greenLottery(int i, int i1, int i2) {
     if(i == i2&& i == i1){
       return 20;
     }else if (i1 == i || i1 == i2 || i == i2){
@@ -72,7 +72,7 @@ public class Conditionals {
     }
   }
 
-  private static String alarmClock(int i, boolean b) {
+  public static String alarmClock(int i, boolean b) {
     switch (i){
       case 0:
           return "off";
@@ -126,7 +126,7 @@ public class Conditionals {
     }
   }
 
-  private static boolean cigarParty(int i, boolean b) {
+  public static boolean cigarParty(int i, boolean b) {
     if(i>=40 && b){
       return true;
     } else if (i>=40 && i <=60){
@@ -135,7 +135,7 @@ public class Conditionals {
     return false;
   }
 
-  private static void longName(Person person) {
+  public static void longName(Person person) {
     if (person.getName().length() > 5){
       System.out.println(person.getName());
     }else {
@@ -143,14 +143,14 @@ public class Conditionals {
     }
   }
 
-  private static boolean fromLondon(Person person) {
+  public static boolean fromLondon(Person person) {
     if (person.getCity().toLowerCase().equals("london")){
       return true;
     }
     return false;
   }
 
-  private static void fizzMultipleofThree(int i) {
+  public static void fizzMultipleofThree(int i) {
     if (i%3==0){
       System.out.println("fizz");
     } else {
@@ -158,25 +158,25 @@ public class Conditionals {
     }
   }
 
-  private static boolean isOddAndIsMultipleOfThree2(int i) {
+  public static boolean isOddAndIsMultipleOfThree2(int i) {
     return isOdd(i) && isOddAndIsMultipleOfThree(i);
   }
 
-  private static boolean isOddAndIsMultipleOfThree(int n) {
+  public static boolean isOddAndIsMultipleOfThree(int n) {
     if (n%3 == 0 && n%2 ==1){
       return true;
     }
     return false;
   }
 
-  private static boolean isMultipleOfThree(int n) {
+  public static boolean isMultipleOfThree(int n) {
     if (n%3==0){
       return true;
     }
     return false;
   }
 
-  private static boolean isOdd(int n) {
+  public static boolean isOdd(int n) {
     if (n % 2 == 1){
       return true;
     }

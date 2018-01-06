@@ -31,14 +31,14 @@ public class ClassesAndObjects {
     System.out.println(isSibling(garfield,catWoman));
   }
 
-  private static boolean isSibling(Cat cat, Cat cat1) {
+  public static boolean isSibling(Cat cat, Cat cat1) {
     if (cat.getOwner() == cat1.getOwner()){
       return true;
     }
     return false;
   }
 
-  private static boolean isFree(Cat cat) {
+  public static boolean isFree(Cat cat) {
     if (cat.getOwner() == null){
       return false;
     } else {
@@ -46,22 +46,22 @@ public class ClassesAndObjects {
     }
   }
 
-  private static void adoption(Cat cat, Person person) {
+  public static void adoption(Cat cat, Person person) {
     cat.setOwner(person);
   }
 
-  private static Cat makeKitten(Cat cat, Cat cat1) {
+  public static Cat makeKitten(Cat cat, Cat cat1) {
     Cat babyCat = new Cat(cat.getName()+cat1.getName());
     babyCat.setAge(0);
     babyCat.setFavoriteFood("cat milk");
     return babyCat;
   }
 
-  private static void makeBestFriends(Cat cat, Cat cat1) {
+  public static void makeBestFriends(Cat cat, Cat cat1) {
     cat1.setFavoriteFood(cat.getFavoriteFood());
   }
 
-  private static boolean isOlder(Cat cat1, Cat cat2) {
+  public static boolean isOlder(Cat cat1, Cat cat2) {
     if(cat1.getAge() > cat2.getAge()){
       return true;
     }

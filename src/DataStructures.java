@@ -85,7 +85,7 @@ public class DataStructures {
     sortingSentences("My name is Wayne");
   }
 
-  private static void sortingSentences(String s) {
+  public static void sortingSentences(String s) {
     ArrayList<String> sorted = new ArrayList<>();
     for (String string : s.split(" ")) {
       sorted.add(string.trim());
@@ -99,7 +99,7 @@ public class DataStructures {
     }
   }
 
-  private static int countClumps(ArrayList<Integer> integers) {
+  public static int countClumps(ArrayList<Integer> integers) {
     int count = integers.get(0) == integers.get(1) ? 1 : 0 ;
     boolean wasLastFewSame = integers.get(0) == integers.get(1);
     for (int i = 1; i < integers.size(); i++) {
@@ -114,13 +114,13 @@ public class DataStructures {
     return count;
   }
 
-  private static void printPod(HashMap<String, Integer> pod){
+  public static void printPod(HashMap<String, Integer> pod){
     for (String s : pod.keySet()) {
       System.out.println("Key: " + s + "| Value: " + pod.get(s));
     }
   }
 
-  private static boolean rentACar(HashMap<String, Integer> pod){
+  public static boolean rentACar(HashMap<String, Integer> pod){
     for (String s : pod.keySet()) {
       if (pod.get(s) >= 25){
         return true;
@@ -129,7 +129,7 @@ public class DataStructures {
     return false;
   }
 
-  private static ArrayList<String> wordsWithoutList(ArrayList<String> inputArray, int omitLength){
+  public static ArrayList<String> wordsWithoutList(ArrayList<String> inputArray, int omitLength){
     ArrayList<String> outputArray = new ArrayList<>();
     for (String s : inputArray) {
       if(s.length() != omitLength) {
@@ -140,7 +140,7 @@ public class DataStructures {
     return outputArray;
   }
 
-  private static void mostFrequentElement(ArrayList<Integer> integers) {
+  public static void mostFrequentElement(ArrayList<Integer> integers) {
     HashSet<Integer> integerSet = new HashSet<>();
     integerSet.addAll(integers);
     HashMap<Integer,Integer> compare = new HashMap<>();
