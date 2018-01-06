@@ -24,7 +24,7 @@ public class Loops {
 //    digits();
   }
 
-  private static void digits(){
+  public static void digits(){
     for (int i = 1; i < 10; i++) {
       for (int j = 0; j < 10; j++) {
         System.out.println(String.valueOf(i)+ String.valueOf(j) + ", " + i + "+" + j + " = " + (i+j));
@@ -32,7 +32,7 @@ public class Loops {
     }
   }
 
-  private static void numberPuzzle(){
+  public static void numberPuzzle(){
     HashMap<Integer,Integer> pairs = new HashMap<>();
     for (int i = 0; i <= 60; i++) {
       for (int j = 60; j >= 0; j--) {
@@ -45,7 +45,7 @@ public class Loops {
     System.out.println(pairs);
   }
 
-  private static void wordEnds(String bigWord, String smallWord) {
+  public static void wordEnds(String bigWord, String smallWord) {
     StringBuilder stringBuilder = new StringBuilder();
     for (int i = 0; i < bigWord.length(); i++) {
       if (bigWord.substring(i,bigWord.length()).length() >= smallWord.length())
@@ -64,7 +64,7 @@ public class Loops {
     System.out.println(s);
   }
 
-  private static void notReplace(String s){
+  public static void notReplace(String s){
     int i = 0;
     while (i < s.length()-1) {
       if ((i != 0)) {
@@ -79,7 +79,7 @@ public class Loops {
     System.out.println(s);
   }
 
-  private static void sumNumbers(String string) {
+  public static void sumNumbers(String string) {
     int sum = 0;
     string = string + " ";
     StringBuilder hold = new StringBuilder();
@@ -96,7 +96,7 @@ public class Loops {
     System.out.println(sum);
   }
 
-  private static void printStringNTimes(int i, String s) {
+  public static void printStringNTimes(int i, String s) {
     if (i > 0) {
       for (int j = 0; j < i; j++) {
         System.out.println(s);
@@ -105,7 +105,7 @@ public class Loops {
       System.out.println("");
     }
   }
-  private static void printStringNTimesModified(int i, String s) {
+  public static void printStringNTimesModified(int i, String s) {
     StringBuilder stringBuilder = new StringBuilder();
     if (i > 0) {
       for (int j = 0; j < i; j++) {
@@ -119,7 +119,7 @@ public class Loops {
   }
 
 
-  private static void printSum(long sum) {
+  public static void printSum(long sum) {
 
     for (long i = 1; i <= sum; i++) {
       sum += i;
@@ -127,7 +127,7 @@ public class Loops {
     System.out.println(sum);
   }
 
-  private static void printSumTen() {
+  public static void printSumTen() {
     int sum = 0;
     for (int i = 1; i <= 10; i++) {
       sum += i;
@@ -135,12 +135,12 @@ public class Loops {
     System.out.println(sum);
   }
 
-  private static void printNums() {
+  public static void printNums() {
     for (int i = 0; i < 10; i++) {
       System.out.println(i + 1);
     }
   }
-  private static void printNumsWhile() {
+  public static void printNumsWhile() {
     int i = 0;
     while (i < 10){
       System.out.println(i + 1);
@@ -148,12 +148,12 @@ public class Loops {
     }
   }
 
-  private static void printNumsGiven(int n) {
+  public static void printNumsGiven(int n) {
     for (int i = 0; i < n; i++) {
       System.out.println(i + 1);
     }
   }
-  private static void printEvens(int n) {
+  public static void printEvens(int n) {
     for (int i = 0; i <= n; i++) {
 
       if( i % 2 == 0){
