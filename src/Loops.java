@@ -18,7 +18,7 @@ public class Loops {
 //    fibonnaciPrintSum();
 //    fibonnaciPrintN(20);
 //    sumNumbers("7 11");
-//    notReplace("is-is");
+    notReplace("is-is");
 //    wordEnds("XY1XY","XY");
 //    numberPuzzle();
 //    digits();
